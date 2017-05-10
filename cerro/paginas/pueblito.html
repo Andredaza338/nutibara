@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pueblito Paisa</title>
+	<meta charset="utf-8">
+
+<link rel="shortcut icon" href="../favicon.jpg">
+	<link rel="stylesheet" type="text/css" href="../estilos/estilos.css">
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+</head>
+
+<body>
+
+<nav id="botonescabeza">
+	<div class="hamburger">
+		<div class="_layer -top"></div>
+		<div class="_layer -mid"></div>
+		<div class="_layer -bottom"></div>
+	</div>
+	<ul id="cabeza">
+		<li> <a href="../index.html" target="_new" class="botones"><span class="icon icon-home"></span>INICIO</a></li>
+		<li> <a href="toboganes.html" target="_new" class="botones"><span class="icon icon-equalizer2"></span>TOBOGANES</a></li>
+		<li> <a href="esculturas.html" target="_new" class="botones" ><span class="icon icon-accessibility"></span>ESCULTURAS</a></li>
+		<li> <a href="teatro.html" target="_new" id="teatro" class="botones"><span class="icon icon-hipster"></span>TEATRO CARLOS VIECO</a></li>
+		<li> <a href="pueblito.html" target="_new" class="botones"><span class="icon icon-leaf"></span>PUEBLITO PAISA</a></li>
+		<li> <a href="contactenos.html" target="_new" class="botones"><span class="icon icon-user-tie"></span>CONTÁCTENOS</a></li>
+		
+	</ul>
+</nav>
+
+<header>
+	<img src="../imagenes/cabe.jpg">
+
+	</header>
+
+<h1 id="titulopueblito">Pueblito Paisa</h1>
+
+
+<article id="imagenpueblito">
+	
+	<img src="../imagenes/pueblitopaisa.jpg">
+</article>
+
+<article id="secdere">
+
+<h2>Cultura y Tradición Antioqueña en un pequeño lugar</h2>	
+
+<p id="parrafodere">
+Este lugar es una pequeña réplica del 	pueblo paisa de antaño, con la recreación de su plaza hace referencia a la cultura Antioqueña en la cual es muy  importante la plaza principal del pueblo siendo esta el punto de encuentro y del el comercio del pueblo, desde las familias más influyentes hasta los campesinos más humildes confluyen en este lugar y sus casa alrededor nos 
+entrañan en la cultura paisa del siglo XX.
+
+</p>
+
+</article>
+
+
+
+
+<article id="secizq">
+	
+<p id="parrafoizq">
+	
+	"En el cerro Nutibara de la ciudad de Medellín se encuentra este pequeño pero significativo memorable pueblo  	antioqueño, cuenta con los escenarios tradicionales de los pueblos, iglesia, escuela, fonda, tienda, alcaldía ubicadas en la plaza principal, desde este maravilloso lugar que nos recuerda la vida décadas atrás podemos visualizar en lo que se ha convertido la ciudad de Medellín gracias a la industrialización y modernidad, pero que en este cerro representativo se esconde este lugar cardado de cultura y tradición". 
+</p>
+
+</article>
+
+
+<aside id="asidepueblito">
+	
+	<img src="../imagenes/drogas.jpg">
+</aside>
+
+<footer>
+<nav id="botones_pie">
+ <a href="../index.html" target="_new" class="botonpata"><span class="icon icon-home"></span>INICIO</a></li>
+ <a href="toboganes.html" target="_new" class="botonpata"><span class="icon icon-equalizer2"></span>TOBOGANES</a></li>
+ <a href="esculturas.html" target="_new" class="botonpata"><span class="icon icon-accessibility"></span>ESCULTURAS</a></li>
+ <a href="teatro.html" target="_new" class="botonpata"><span class="icon icon-hipster"></span>TEATRO</a></li>
+ <a href="pueblito.html" target="_new" class="botonpata"><span class="icon icon-leaf"></span>PUEBLITO PAISA</a></li>
+ <a href="contactenos.html" target="_new" class="botonpata"><span class="icon icon-user-tie"></span>CONTÁCTENOS</a></li>
+		
+</nav>
+
+<h2 id="disfruta">VEN Y DISFRUTA EL</h2>
+<img id="logopata" src="../imagenes/pata_logo.png">
+
+<p id="direccion">Calle 30a N° 55-64 <br>PBX: 2358370 <br> @cerronutibara</p> 
+
+<img id="lupa" src="../imagenes/lupa.png">
+
+</footer>
+<script language="JavaScript" type="text/javascript">
+function clockjs(){if(document.layers||document.all||document.getElementById){var c=new Date,e=c.getHours(),o=c.getMinutes(),t=c.getSeconds(),n="PM";12>e&&(n="AM"),e>12&&(e-=12),0==e&&(e=12),9>=o&&(o="0"+o),9>=t&&(t="0"+t),myclock=e+":"+o+":"+t+" "+n,document.layers?(document.layers.clockjavascript.document.write(myclock),document.layers.clockjavascript.document.close()):document.all?clockjavascript.innerHTML=myclock:document.getElementById&&(document.getElementById("clockjavascript").innerHTML=myclock),setTimeout("clockjs()",1e3)}}window.onload=clockjs;
+
+// selector
+var menu = document.querySelector('.hamburger');
+// method
+function toggleMenu (event) {
+  this.classList.toggle('is-active');
+  document.querySelector( "#cabeza" ).classList.toggle("is_active");
+  event.preventDefault();
+}
+// event
+menu.addEventListener('click', toggleMenu, false);
+</script>
+</body>
+</html>
