@@ -3,6 +3,8 @@
 <head>
 	<title>Parque de las Esculturas</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<link rel="shortcut icon" href="../favicon.jpg">
 	<link rel="stylesheet" type="text/css" href="../estilos/estilos.css">
 	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
@@ -16,6 +18,10 @@
 </head>
 <body>
 <nav id="botonescabeza">
+	<div id="buscadorheader">
+		<a href="https://www.facebook.com" target="blank"><img id="facebook" src="../imagenes/logo_facebook.png"></a> 
+		<input type="text" name="buscador"><span class="icon icon-search"></span>
+	</div>
 	<div class="hamburger">
 		<div class="_layer -top"></div>
 		<div class="_layer -mid"></div>
@@ -104,12 +110,13 @@
 
 <p id="direccion">Calle 30a N° 55-64 <br>PBX: 2358370 <br> @cerronutibara</p> 
 
-<img id="lupa" src="../imagenes/lupa.png">
+<!-- <img  id="lupa" src="../imagenes/lupa.png"> -->
+<div id="buscadorfooter">
+	<input type="text" name="buscdorfooter"><span class="icon icon-search"></span>
+</div>
 
 </footer>
 <script language="JavaScript" type="text/javascript">
-function clockjs(){if(document.layers||document.all||document.getElementById){var c=new Date,e=c.getHours(),o=c.getMinutes(),t=c.getSeconds(),n="PM";12>e&&(n="AM"),e>12&&(e-=12),0==e&&(e=12),9>=o&&(o="0"+o),9>=t&&(t="0"+t),myclock=e+":"+o+":"+t+" "+n,document.layers?(document.layers.clockjavascript.document.write(myclock),document.layers.clockjavascript.document.close()):document.all?clockjavascript.innerHTML=myclock:document.getElementById&&(document.getElementById("clockjavascript").innerHTML=myclock),setTimeout("clockjs()",1e3)}}window.onload=clockjs;
-
 // selector
 var menu = document.querySelector('.hamburger');
 // method

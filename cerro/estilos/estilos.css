@@ -51,8 +51,14 @@
 	.icon-hipster:before {
 	  content: "\e9f9";
 	}
+	.icon-search:before {
+	  content: "\e986";
+	}
 
-
+	video{
+		width: 100%;
+		height: auto;
+	}
 
 	.icon{
 		margin-right: 3px;
@@ -75,17 +81,35 @@
 		width: 100%;
 		max-width: 960px;
 	}
-	#menuoculto{
-		display: none;
-	}
 	/*PRINCIPAL------------------------------*/
+	#buscadorheader {
+	    background-color: #8a4b08;
+	    padding: 6px;
+	    text-align: right;
+	}
+	#buscadorheader input{
+	    border: none;
+	    height: 30px;
+	    margin-right: 5px;
+	    vertical-align: middle;
+	    padding-left:10px; 
+	}
+	#buscadorheader span{
+	    vertical-align: middle;
+	    color: #fff;
+	}
+	#buscadorheader #facebook{
+	    width: 30px;
+	    vertical-align: middle;
+	}
+
 	#botonescabeza{
 		width: 100%;
 	 	margin: 0px auto;
 	 	overflow: hidden;
 	}
 	#cabeza li{
-		width: 16.6%;
+		width: 16.65%;
 	}
 	#cabeza a{
 		margin: 0px auto;
@@ -109,15 +133,15 @@
 	}
 	header{
 		margin: 0px auto;
-		float: left;
-		overflow: hidden;
 		/*background-image: url(../imagenes/logo.png);*/
 	}
 	header img{
 		width: 100%;
+		display: block;
 	}
 	#fecha img{
 		width: 100%;
+		display: block;
 	}
 	#fecha{
 		position: relative;
@@ -126,7 +150,7 @@
 		position: absolute;
 		font-family: 'Abel', sans-serif;
 	    font-size: 25px;
-	    bottom: 11px;
+	    bottom: 5px;
 	    left: 170px;
 	}
 	#pueblito{
@@ -134,17 +158,14 @@
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
 		margin: 0px auto;
-		float: left;
-		width: 75.7%;
+		width: 100%;
 	}
-
 	#asideindex{
-		width: 24.3%;
-		float: left;
-
+		width: 100%;
 	}
 	#asideindex img{
 		width: 100%;
+		display: block;
 	}
 	#titulop{
 		font-family: 'Abel', sans-serif;
@@ -331,6 +352,26 @@
 		padding-top:5px;
 		padding-left: 10.6%;
 		vertical-align: center;
+	}
+	#buscadorfooter{
+		display: inline-block;
+	}
+	#buscadorfooter{
+	    margin-left: 17.18%;
+	    margin-top: 15px;
+	}
+	#buscadorfooter input{
+		height: 30px;
+		vertical-align: middle;
+		margin-right: 5px;
+		background-color: #8a4b08;
+		border:2px solid #ffffff;
+		padding-left: 10px;
+		color:#ffffff;
+	}
+	#buscadorfooter span{
+		vertical-align: middle;
+		color: #ffffff;
 	}
 	/*TOBOGANES------------------------------*/
 	#video{
@@ -537,16 +578,16 @@ Desktop*/
 	}
 
 	#disfruta{
-		font-size: 30px;
+		font-size: 15px;
 		padding-top: 15px;	
 		width: 50%;
-		text-align: center;
+		text-align: left;
 		vertical-align: middle;
 		float: none;
 	}
 
 	#logopata{
-		width: 32.29%;
+		width: 26%;
 		margin:0 auto;
 		padding-left: 0px;
 		padding-top: 20px;
@@ -554,16 +595,16 @@ Desktop*/
 		float: none;
 	}
 	#botones_pie{
-		width: 100%;
+		width: 50%;
 		color: #fff;
 		float: left;
 	}
 	#botones_pie a.botonpata{
 		width: 75%;
-		height: 25px;
+		height: 16px;
 		padding-left: 0px;
 		border: none;
-		font-size: 20px;
+		font-size: 15px;
 		float: none;
 	}
 
@@ -571,6 +612,7 @@ Desktop*/
 		width: 100%;
 		margin-left: 0px;
 		margin-top: 20px;
+		font-size: 19px;
 		float: none;
 	}
 	#redesociales{
@@ -617,7 +659,7 @@ Desktop*/
 		margin-top: 25px;
 	}
 	#asidesculturas img{
-		width: 300px;
+		width: 100%;
 	}
 	/*TEATRO*/
 	#asideteatro{
@@ -643,8 +685,17 @@ Desktop*/
 	}
 	#clockjavascript {
 	    font-size: 20px;
-	    bottom: 9px;
+	    bottom: 3px;
 	    left: 130px;
+	}
+	#buscadorfooter {
+	    margin-top: 15px;
+	    text-align: right;
+	    margin-right: auto;
+	    margin-bottom: 30px;
+	    margin-left: auto;
+	    width: 200px;
+	    display: block;
 	}
 }
 /*Cel*/
@@ -867,6 +918,9 @@ Desktop*/
 		padding-left: 0px;
 	}
 	/*TOBOGANES*/
+	#titulotoboganes{
+		margin-bottom:20px;
+	}
 	#video{
 		float: none;
 		width: 100%;
@@ -881,9 +935,12 @@ Desktop*/
 		margin-left: 0px;
 	}
 	#asidetoboganes img{
-		width: 300px;
+		width: 100%;
 	}
 	/*ESCULTURA*/
+	#tituloesculturas{
+		margin-bottom: 20px;
+	}
 	#galeria{
 		float: none;
 		width: 100%;
@@ -895,12 +952,18 @@ Desktop*/
 		margin-top: 25px;
 	}
 	#asidesculturas img{
-		width: 300px;
+		width: 100%;
 	}
 	/*TEATRO*/
+	#tituloteatro{
+		margin-bottom: 20px;
+	}
 	#asideteatro{
 		text-align: center;
 		float: none;
+	}
+	#asideteatro img{
+		width: 100%;
 	}
 	/*PUEBLITO*/
 	#secdere, #parrafodere{
@@ -923,8 +986,8 @@ Desktop*/
 		width: 100%;
 	}
 	#clockjavascript {
-	    font-size: 15px;
-	    bottom: 5px;
+	    font-size: 12px;
+	    bottom: 2px;
 	    left: 85px;
 	}
 }
